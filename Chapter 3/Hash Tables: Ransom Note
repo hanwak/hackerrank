@@ -1,0 +1,27 @@
+#link : https://www.hackerrank.com/challenges/ctci-ransom-note/problem
+
+// Complete the checkMagazine function below.
+void checkMagazine(int magazine_count, char** magazine, int note_count, char** note) {
+    int i,j,k;
+    int count=0;
+    int flag=0;
+
+    //Checking Note to Magazine
+    //If string match, add counter and remove word from magazine, break the loop so it       //doesn't occur twice
+    for(i=0;i<note_count;i++){
+        for(j=0;j<magazine_count;j++){
+            if(strcmp(note[i],magazine[j])==0){
+                magazine[j][0]='\0';
+                count++;
+                break;
+            }
+        }
+    }
+
+    //Print Result
+    //If counter = note count, it means that the note can be created using the words from magazine
+    if (count==note_count)
+        printf("Yes");
+    else
+        printf("No");
+ }
