@@ -5,7 +5,7 @@ Solutions posted are based on The Algorithm Design Manual by Steven S. Skiena
 All solutions written in C language
 
 
-Log:
+# Change Log:
 # Week 1
 
 20/05 : Repository created
