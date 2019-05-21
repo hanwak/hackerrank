@@ -1,0 +1,44 @@
+https://www.hackerrank.com/challenges/sparse-arrays/problem
+
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    //Define and allocate static arrays
+    char str[1000][1000];
+    char que[1000][1000];
+
+    //Counter
+    int i,j,result;
+    int str_c,que_c;
+
+    //Input strings and queries
+    scanf("%d",&str_c);
+    for (i=0;i<str_c;i++)
+        scanf("%s", &str[i]);
+
+    scanf("%d",&que_c);
+    for (i=0;i<que_c;i++)
+        scanf("%s", &que[i]);
+
+    //Compare match queries to strings 
+    //if a query match to a string, add one to 'result' and print the result after each      //string search 
+    for(i=0;i<que_c;i++){
+        result=0;
+        for(j=0;j<str_c;j++){
+            if (strcmp(que[i],str[j])==0)
+                result++;
+            }
+        printf("%d\n",result);
+    }
+
+    return 0;
+}
