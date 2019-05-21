@@ -1,4 +1,7 @@
 #link : https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem?h_r=internal-search
+#implement insert_list, search_list, and list in particular, problem found in section 3.1.2
+
+
 
 SinglyLinkedListNode* insertNodeAtPosition(SinglyLinkedListNode* head, int data, int position) {
     int i=0; //Counter
