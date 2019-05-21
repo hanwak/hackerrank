@@ -10,7 +10,7 @@ All solutions written in C language
 
 20/05 :   Repository created
 
-20/05 :   Added Chapter 1,2,3
+20/05 :   Added Chapter 1,2,3 and some solutions
 
 22/05 :   Added readme to explain the problems and the algorithms used in the book
           
