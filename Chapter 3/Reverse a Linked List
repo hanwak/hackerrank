@@ -1,0 +1,21 @@
+#link : https://www.hackerrank.com/challenges/reverse-a-linked-list/
+#Solution for Exersice 3.2
+
+SinglyLinkedListNode* reverse(SinglyLinkedListNode* head) {
+    SinglyLinkedListNode *prev,*curr,*next;
+
+    prev=NULL;
+    curr=head;
+    next=NULL;
+
+    while(curr!=NULL){
+        next=curr->next;    //Move next to the next node (move one node)
+        curr->next=prev;    //reverse the current pointer to point the previous node
+        prev=curr;          //move prev to current node (move one node)
+        curr=next;          //move current to next node (move one node)
+    }
+
+    head=prev;  //Assign the head to point the previous node (last node)
+
+    return head;
+}
