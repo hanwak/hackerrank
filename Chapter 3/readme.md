@@ -5,6 +5,7 @@
 - Problem found in section 3.1.2
 
 2. Reverse Linked List
+- Implement pointer passing for linked list
 - Solution for Exersice 3.2
 
 3. Binary Search Tree : Lowest Common Ancestor
