@@ -16,4 +16,4 @@ All solutions written in C language
           
 22/05 :   Added insertion linked list, reverse linked list, and sparse array 
 
-31/05 :   Added binary search tree
+31/05 :   Added binary search tree, and made some adjusments about readme and file writing
