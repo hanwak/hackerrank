@@ -18,4 +18,4 @@ All solutions written in C language
 
           Week 2
 
-31/05 :   Added binary search tree, and made some adjusments about readme and file writing
+31/05 :   Added binary search tree, and made some adjusments regarding readme and file writing
