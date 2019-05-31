@@ -1,5 +1,5 @@
 #link: https://www.hackerrank.com/challenges/30-binary-search-trees/
-#implement: binary seacrh tree basic
+#implement: binary seacrh tree tranverse
 
 int getHeight(Node* root){
 //Write your code here  
