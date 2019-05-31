@@ -1,0 +1,29 @@
+link: https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor/problem?h_r=internal-search
+implement: binary search tree, preorder tranversal
+
+struct node *lca( struct node *root, int v1, int v2 ) {
+    //Define functions for checking the left and right subtree
+    struct node *left_lca;
+    struct node *right_lca;
+    
+    //check and return NULL if the tree is empty
+    if (root==NULL)
+        return NULL;
+    //return this node if the one of the key present within this node
+    if (root->data == v1 || root->data == v2) 
+        return root; 
+    
+    //Tranverse to left subtree and then right subtree (Preorder Transversal)
+    //Preorder transversal because the search starts from root tree and tranverse to         //left and then right subtree
+    left_lca  = lca(root->left, v1, v2); 
+    right_lca = lca(root->right, v1, v2); 
+
+    //if both function return !NULL value, then this node is the lca
+    if (left_lca && right_lca)  return root; 
+
+    //if left function return !NULL, check the left subtree if its the lca, otherwise        //right subtree is the lca
+    if (left_lca!=NULL)
+        return left_lca;
+    else   
+        return right_lca;
+}
