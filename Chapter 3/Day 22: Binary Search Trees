@@ -1,0 +1,19 @@
+#link: https://www.hackerrank.com/challenges/30-binary-search-trees/
+#implement: binary seacrh tree basic
+
+int getHeight(Node* root){
+//Write your code here  
+    int left,right;
+
+    if (root==NULL)
+        return -1;
+    else{
+        left = 1 + getHeight(root->left);
+        right = 1 + getHeight(root->right);
+    
+        if (left>right) 
+            return left;
+        else 
+            return right;
+    }
+}
