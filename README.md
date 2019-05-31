@@ -15,3 +15,5 @@ All solutions written in C language
 22/05 :   Added readme to explain the problems and the algorithms used in the book
           
 22/05 :   Added insertion linked list, reverse linked list, and sparse array 
+
+31/05 :   Added binary search tree
