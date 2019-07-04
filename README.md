@@ -19,3 +19,7 @@ All solutions written in C language
           Week 2
 
 31/05 :   Added binary search tree, and made some adjusments regarding readme and file writing
+
+          Week 3
+          
+04/07 :   Revised files' format to include all codes (function and main program) 
