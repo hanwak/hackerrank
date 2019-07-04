@@ -23,3 +23,5 @@ All solutions written in C language
           Week 3
           
 04/07 :   Revised files' format to include all codes (function and main program) 
+
+04/07 :   Added Chapter 4
