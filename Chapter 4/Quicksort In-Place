@@ -1,2 +1,65 @@
 #link : https://www.hackerrank.com/challenges/quicksort3/problem?h_r=internal-search
 #Implementation for chapter 4.6
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+void quicksort(int s[], int l, int h, int n){
+    int p;
+
+    if ((h-l)>0){
+        p = partition(s,l,h,n);
+
+        quicksort(s,l,p-1,n);
+        quicksort(s,p+1,h,n);
+    }
+
+    else 
+        return 0;
+}
+
+int partition(int s[], int l, int h, int n){
+    int i;
+    int p;
+    int firsthigh;
+    int temp;
+
+    p=s[h];             //Pivot Element
+    firsthigh = l-1;  
+
+    for (i=l; i<=h-1; i++){
+        if(s[i]<=p){
+            firsthigh++;
+            temp=s[i];
+            s[i]=s[firsthigh];
+            s[firsthigh]=temp;
+        }
+    }
+    temp=s[h];
+    s[h]=s[firsthigh+1];
+    s[firsthigh+1]=temp;
+
+    for(int c=0;c<n;c++)
+        printf("%d ", s[c]);
+    printf("\n");    
+
+    return(firsthigh+1);
+}
+
+int main() {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    //Define Variable
+    int ar[99999];
+    int n; //Array size
+    int i; //Counter 
+
+    scanf("%d",&n);
+    for (i=0;i<n;i++){
+        scanf("%d",&ar[i]);
+    }
+
+    quicksort(ar,0,n-1,n);
+    return 0;
+}
