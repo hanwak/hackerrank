@@ -24,4 +24,6 @@ All solutions written in C language
           
 04/07 :   Revised files' format to include all codes (function and main program) 
 
-04/07 :   Added Chapter 4
+04/07 :   Added Chapter 4 and Chapter 4 - Insertion Sort
+
+05/07 :   Added Chapter 4 - Quick Sort
