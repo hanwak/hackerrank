@@ -1,3 +1,5 @@
+link : https://www.hackerrank.com/challenges/components-in-graph/problem?h_r=internal-search
+
 #include<stdio.h>
 
 int pSet[100010],n,count[100010]={0},there[100010]={0};
