@@ -1,4 +1,5 @@
-link : https://www.hackerrank.com/challenges/components-in-graph/problem?h_r=internal-search
+#link : https://www.hackerrank.com/challenges/components-in-graph/problem?h_r=internal-search
+#Implement Chapter 6.1.3
 
 #include<stdio.h>
 
